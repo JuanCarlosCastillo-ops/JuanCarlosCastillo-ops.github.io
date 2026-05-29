@@ -1,0 +1,6 @@
+<svg width="620" height="140" viewBox="0 0 620 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g" x1="0" y1="0" x2="620" y2="140" gradientUnits="userSpaceOnUse"><stop stop-color="#35D5FF"/><stop offset="0.55" stop-color="#7BF1A8"/><stop offset="1" stop-color="#F8B732"/></linearGradient><filter id="s" x="-20" y="-20" width="660" height="180" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#35D5FF" flood-opacity="0.18"/></filter></defs>
+<g filter="url(#s)"><path d="M30 70C30 47.9 47.9 30 70 30h44l-18 20H70c-11 0-20 9-20 20s9 20 20 20h26l18 20H70c-22.1 0-40-17.9-40-40Z" fill="url(#g)"/><path d="M88 30h78l-18 20h-30v60H94V50H70l18-20Z" fill="url(#g)"/><path d="M155 70c0-22.1 17.9-40 40-40s40 17.9 40 40-17.9 40-40 40-40-17.9-40-40Zm24 0c0 8.8 7.2 16 16 16s16-7.2 16-16-7.2-16-16-16-16 7.2-16 16Z" fill="url(#g)"/><path d="M253 30h43c25 0 43 17 43 40s-18 40-43 40h-43V30Zm24 22v36h18c11 0 19-7 19-18s-8-18-19-18h-18Z" fill="url(#g)"/></g>
+<text x="360" y="62" fill="#EEF7FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="-1.5">TEOD CONTROL</text>
+<text x="362" y="94" fill="#9BB0C1" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="2.8">INGENIERÍA ELÉCTRICA</text>
+</svg>

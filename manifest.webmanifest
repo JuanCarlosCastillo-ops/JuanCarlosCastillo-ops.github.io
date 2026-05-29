@@ -1,0 +1,10 @@
+{
+  "name": "TEOD CONTROL",
+  "short_name": "TEOD",
+  "description": "Ingeniería eléctrica, tableros, motores y control industrial.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061018",
+  "theme_color": "#061018",
+  "icons": [{"src": "assets/icon.svg", "sizes": "128x128", "type": "image/svg+xml"}]
+}

@@ -1,1 +1,143 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090909"><meta name="description" content="Bolsillo — finanzas personales que se sienten como progreso, no como contabilidad."><title>Bolsillo</title><style>/* placeholder will be replaced */</style></head><body><h1>Bolsillo</h1></body></html>
+<!doctype html>
+<html lang="es" data-theme="black">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Bolsillo — finanzas personales que se sienten como progreso, no como contabilidad.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+<link rel="stylesheet" href="./styles.css">
+<title>Bolsillo</title>
+</head>
+<body>
+<div class="app" id="app">
+  <header class="topbar">
+    <button class="brand" data-go="home" type="button" aria-label="Inicio">
+      <span class="brand-mark">◜</span><span class="brand-word">BOLSILLO</span><span class="brand-line">Pequeños hábitos.<br>Grandes vidas.</span>
+    </button>
+    <button class="icon-btn" id="privacyToggle" type="button" aria-label="Ocultar importes">◉</button>
+  </header>
+
+  <main>
+    <section class="view" id="home">
+      <article class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hello">HOLA</p>
+          <h1 id="helloName">Tu dinero.<br>Sin ruido.</h1>
+          <div class="balance-block">
+            <span>Disponible</span>
+            <strong class="money" id="available">$0.00</strong>
+            <small id="monthHint">Configura tu mes para empezar.</small>
+          </div>
+        </div>
+        <button class="milo-portrait" type="button" data-go="milo" aria-label="Abrir Milo">
+          <img id="homeMilo" src="" data-asset="portrait" alt="Milo, tu compañero financiero">
+          <span><b id="miloHello">Milo te espera</b><small id="miloMood">Curioso</small></span>
+        </button>
+        <div class="hero-rule"></div>
+        <div class="hero-progress">
+          <span id="heroSpendText">$0 de $0</span><div class="bar"><i id="budgetBar"></i></div><b id="budgetPct">0%</b>
+        </div>
+      </article>
+
+      <section class="quick-grid" aria-label="Acciones rápidas">
+        <button type="button" id="quickExpense"><span>−</span><b>Gasto</b></button>
+        <button type="button" id="quickIncome"><span>＋</span><b>Ingreso</b></button>
+        <button type="button" data-go="goals"><span>◎</span><b>Meta</b></button>
+        <button type="button" data-go="milo"><span>♧</span><b>Milo</b></button>
+      </section>
+
+      <button class="insight-strip" type="button" data-go="activity">
+        <span class="insight-icon">↗</span>
+        <span><b id="insightTitle">Empieza esta semana</b><small id="insightText">Registra algo y Bolsillo empezará a leer tu ritmo.</small></span>
+        <strong>›</strong>
+      </button>
+
+      <article class="weekly-panel">
+        <div class="panel-head"><div><span class="eyebrow">RESUMEN SEMANAL</span><h2 id="weekRange">Esta semana</h2></div><button type="button" id="shareWeekly">Compartir ↗</button></div>
+        <div class="weekly-layout">
+          <div class="week-chart" id="weekChart" aria-label="Gastos diarios de esta semana"></div>
+          <div class="score-block"><span>Control</span><strong id="score">80</strong><small>/100</small><div class="score-ring" id="scoreRing"></div></div>
+        </div>
+        <div class="weekly-foot"><span id="weekSpent" class="money">$0 esta semana</span><span id="streak">0 días de racha</span></div>
+      </article>
+
+      <section class="section-title"><div><span class="eyebrow">LO IMPORTANTE</span><h2>Tu semana de un vistazo.</h2></div></section>
+      <article class="compact-list" id="categoryList"></article>
+
+      <article class="goal-spotlight" id="goalSpotlight">
+        <div class="goal-orb">◎</div><div class="goal-copy"><span class="eyebrow">META PRINCIPAL</span><h3 id="goalTitle">Ponle nombre a tu siguiente victoria.</h3><p id="goalCopy">Tu ahorro necesita destino, no culpa.</p><div class="goal-track"><i id="goalBar"></i></div></div><button type="button" data-go="goals">›</button>
+      </article>
+    </section>
+
+    <section class="view hidden" id="activity">
+      <header class="page-title"><div><span class="eyebrow">MOVIMIENTOS</span><h1>Claro, rápido,<br>sin contabilidad.</h1></div><button class="solid-small" id="addTxTop" type="button">+ Añadir</button></header>
+      <section class="mini-stats"><article><span>Gastado</span><b class="money" id="monthSpend">$0</b></article><article><span>Planeado</span><b id="plannedPct">100%</b></article><article><span>Registros</span><b id="txCount">0</b></article></section>
+      <div class="segmented" id="txFilters"><button class="active" data-filter="all">Todos</button><button data-filter="expense">Gastos</button><button data-filter="income">Ingresos</button></div>
+      <div class="tx-list" id="txList"></div>
+    </section>
+
+    <section class="view hidden" id="milo">
+      <header class="page-title milo-title"><div><span class="eyebrow">TU COMPAÑERO</span><h1 id="miloName">Milo</h1><p>Disciplina que se puede ver.</p></div><div class="heart-wallet"><span>♥</span><b id="leafCount">2</b></div></header>
+
+      <article class="milo-room">
+        <img src="" data-asset="room" alt="Milo descansando en su habitación">
+        <div class="room-shade"></div>
+        <div class="milo-toolbar">
+          <button id="feedMilo" type="button"><b>◒</b><span>Alimentar</span></button>
+          <button id="playMilo" type="button"><b>⌁</b><span>Jugar</span></button>
+          <button id="wardrobeBtn" type="button"><b>♧</b><span>Vestir</span></button>
+          <button id="checkinBtn" type="button"><b>✓</b><span>Revisé hoy</span></button>
+        </div>
+        <div class="room-bottom"><div><span>Nivel</span><b id="miloLevel">1</b></div><div class="level-line"><i id="levelBar"></i></div><small id="levelXP">0 / 250 XP</small></div>
+      </article>
+
+      <article class="mission-card"><span class="mission-icon">♛</span><div><span class="eyebrow">MISIÓN DE HOY</span><h3 id="missionTitle">Revisa tu día</h3><p id="missionCopy">Una mirada consciente vale más que veinte gráficos.</p></div><b id="missionReward">+15 XP</b></article>
+
+      <div class="panel-head"><div><span class="eyebrow">ARMARIO DE MILO</span><h2>Lo ganas. No lo compras.</h2></div><small id="miloFed">0 snacks</small></div>
+      <div class="wardrobe" id="wardrobe"></div>
+    </section>
+
+    <section class="view hidden" id="goals">
+      <header class="page-title"><div><span class="eyebrow">METAS</span><h1>Tu yo futuro<br>tiene nombre.</h1></div><button class="solid-small" id="addGoal" type="button">+ Nueva</button></header>
+      <article class="future-card"><div class="future-symbol" id="futureSymbol">◎</div><div><span class="eyebrow">SIGUIENTE VICTORIA</span><h2 id="futureTitle">Todavía no elegiste destino.</h2><p id="futureText">Una meta concreta convierte sacrificios en decisiones.</p></div></article>
+      <div class="goals-list" id="goalsList"></div>
+    </section>
+
+    <section class="view hidden" id="profile">
+      <header class="page-title"><div><span class="eyebrow">PERFIL</span><h1>Tu Bolsillo.<br>Tus reglas.</h1></div></header>
+      <article class="form-card">
+        <label>Nombre o alias<input id="alias" maxlength="24" placeholder="Ej. JC"></label>
+        <label>Nombre de Milo<input id="petName" maxlength="18" placeholder="Milo"></label>
+        <div class="two"><label>Ingreso mensual<input id="income" type="number" min="0" step="10"></label><label>Presupuesto de gasto<input id="budget" type="number" min="1" step="10"></label></div>
+        <label>Meta de ahorro mensual (%)<input id="savingRate" type="number" min="0" max="90" step="1"></label>
+        <div class="theme-row"><button type="button" class="theme-pick active" data-theme="black"><i class="black-dot"></i> Negro mate</button><button type="button" class="theme-pick" data-theme="ivory"><i class="ivory-dot"></i> Marfil</button></div>
+        <button class="solid-wide" id="saveProfile" type="button">Guardar configuración</button>
+      </article>
+      <article class="data-card"><span class="eyebrow">TUS DATOS</span><h2>Privados por diseño.</h2><p>Esta edición no conecta bancos, no usa anuncios y no envía movimientos a un servidor.</p><div class="data-actions"><button id="exportData">Exportar</button><label>Importar<input type="file" id="importData" accept="application/json"></label><button id="eraseData" class="danger">Borrar todo</button></div></article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegación">
+    <button class="active" data-go="home"><b>⌂</b><span>Inicio</span></button>
+    <button data-go="activity"><b>▤</b><span>Movs</span></button>
+    <button class="nav-milo" data-go="milo"><img id="navMilo" src="" data-asset="portrait" alt=""><span>Milo</span></button>
+    <button data-go="goals"><b>◎</b><span>Metas</span></button>
+    <button data-go="profile"><b>○</b><span>Perfil</span></button>
+  </nav>
+</div>
+
+<div class="modal hidden" id="txModal"><form class="sheet" id="txForm"><div class="sheet-head"><div><span class="eyebrow">NUEVO MOVIMIENTO</span><h2>Anótalo y sigue.</h2></div><button type="button" data-close="txModal">×</button></div><div class="segmented kind"><button type="button" class="active" data-kind="expense">Gasto</button><button type="button" data-kind="income">Ingreso</button></div><label>Monto<input id="txAmount" type="number" min="0.01" step="0.01" required inputmode="decimal" placeholder="$ 0.00"></label><label>Categoría<select id="txCategory"><option>Comida</option><option>Transporte</option><option>Casa</option><option>Trabajo</option><option>Diversión</option><option>Salud</option><option>Compras</option><option>Educación</option><option>Otros</option></select></label><label>Nota<input id="txNote" maxlength="60" placeholder="Ej. gasolina, almuerzo, materiales"></label><label>Fecha<input id="txDate" type="date" required></label><label class="check-row" id="plannedWrap"><input id="txPlanned" type="checkbox" checked><span><b>Fue planeado</b><small>Premiamos control, no gastar menos.</small></span></label><button class="solid-wide" type="submit">Guardar movimiento</button></form></div>
+
+<div class="modal hidden" id="goalModal"><form class="sheet" id="goalForm"><div class="sheet-head"><div><span class="eyebrow">NUEVA META</span><h2>Dale nombre al futuro.</h2></div><button type="button" data-close="goalModal">×</button></div><label>Icono<select id="goalEmoji"><option>🛡️</option><option>🏠</option><option>✈️</option><option>💻</option><option>🎓</option><option>🚗</option><option>💎</option></select></label><label>Nombre<input id="goalName" maxlength="40" required placeholder="Fondo de emergencia"></label><label>Objetivo<input id="goalTarget" type="number" min="1" step="10" required></label><label>Aporte mensual ideal<input id="goalMonthly" type="number" min="0" step="10"></label><button class="solid-wide" type="submit">Crear meta</button></form></div>
+
+<div class="modal hidden" id="contribModal"><form class="sheet" id="contribForm"><input type="hidden" id="contribId"><div class="sheet-head"><div><span class="eyebrow">APORTE</span><h2 id="contribTitle">Avanza tu meta</h2></div><button type="button" data-close="contribModal">×</button></div><label>Monto<input id="contribAmount" type="number" min="0.01" step="0.01" required></label><label>Fecha<input id="contribDate" type="date" required></label><button class="solid-wide" type="submit">Registrar aporte</button></form></div>
+
+<div class="modal hidden" id="storyModal"><div class="story-sheet"><div class="story-head"><button type="button" data-close="storyModal">×</button><button id="downloadStory" type="button">Compartir ↗</button></div><canvas id="storyCanvas" width="1080" height="1920"></canvas></div></div>
+<div class="toast hidden" id="toast" aria-live="polite"></div>
+
+<script src="./assets.js"></script>
+<script src="./core.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

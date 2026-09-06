@@ -1,8 +1,8 @@
 'use strict';
 (()=>{
-const B=window.B,$=B.$,$$=B.$$,A=window.BOLSILLO_ASSETS;
+const B=window.B,$=B.$,$$=B.$$,A=window.BOLSILLO_ASSETS; A.portrait=A.portrait||A.natural; A.room=A.room||A.hoodie;
 B.filter='all';B.kind='expense';
-const lookMap={natural:{name:'Natural',xp:0,img:A.natural},hoodie:{name:'Hoodie',xp:120,img:A.hoodie},cap:{name:'Gorra',xp:420,img:A.cap},glasses:{name:'Lentes',xp:700,img:A.glasses},scarf:{name:'Bufanda',xp:1000,img:A.scarf},crown:{name:'Imperial',xp:1800,img:A.crown}};
+const lookMap={natural:{name:'Natural',xp:0,img:A.natural},hoodie:{name:'Hoodie',xp:180,img:A.hoodie}};
 const catIcon=c=>({Comida:'◒',Transporte:'↗',Casa:'⌂',Trabajo:'⌁',Diversión:'✦',Salud:'＋',Compras:'◇',Educación:'⌘',Otros:'•'}[c]||'•');
 const show=id=>$(id).classList.remove('hidden'),hide=id=>$(id).classList.add('hidden');
 const mask=()=>{const p=B.S.profile.privacy;$$('.money').forEach(e=>e.classList.toggle('masked',p));$('privacyToggle').textContent=p?'◌':'◉'};

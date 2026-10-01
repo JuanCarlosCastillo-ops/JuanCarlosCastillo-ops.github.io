@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "workspace-create-huertenitos-v1",
+    "action": "create_workspace",
+    "workspace_id": "huertenitos",
+    "slug": "huertenitos",
+    "name": "Huerteñitos",
+    "plan": "community",
+    "timezone": "America/Guayaquil",
+    "contact_name": "TEOD CONTROL",
+    "contact_phone": "0967393585"
+  }
+]

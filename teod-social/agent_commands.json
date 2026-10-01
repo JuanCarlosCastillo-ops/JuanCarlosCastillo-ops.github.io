@@ -1,9 +1,1 @@
-[
-  {
-    "id": "shift-campaign-to-2026-10-01",
-    "action": "shift_scheduled_window",
-    "from_at": "2026-10-06T12:50:00.000Z",
-    "to_at": "2026-10-13T01:10:00.000Z",
-    "delta_days": -5
-  }
-]
+[]

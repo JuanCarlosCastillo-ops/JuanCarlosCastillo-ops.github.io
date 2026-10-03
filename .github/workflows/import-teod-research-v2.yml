@@ -1,0 +1,49 @@
+name: Import TEOD Research campaign v2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-teod-research-v2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Import exact generated campaign posters
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p teod-social/research/2026-10-v2
+
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/b5e96cba-1899-47f1-87a2-dd0c43fdbdb8.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMWQwMjk5ZWMxNmM4ZmQxMSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE3Njk0MH0.1lSxBnDK067VhqPT6xTqtn8bll08oDwdY823tWwdCUk' -o teod-social/research/2026-10-v2/teod-research-v2-01.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/69c4748c-697c-415d-9dd5-edf8b6546ef6.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYTZkZDU2ZmMxNjE5NDgxZSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE0OTE4MH0.b_D_xVsFzKqK4s59W5Va6QiNt44gUajb9Jh-2kArhCY' -o teod-social/research/2026-10-v2/teod-research-v2-02.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/28fc2669-d150-4326-aba4-f9b6948c115d.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNDFlZWRlNDVmZTJlMjI0NSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE1MjcwOX0.FPZwwifh3tTEUAmhKTBJ-y6tE2jhJpInadnS-vmKZRA' -o teod-social/research/2026-10-v2/teod-research-v2-03.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/e4a895dc-885a-4da1-a051-8400f04d12be.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNjk0MDNiY2I3YTIxMjlkMiIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTIxODg5MX0.N1ZT3aaa6lZkVC3yRH4cqaKRHw0x8WAX1erSsixcDvA' -o teod-social/research/2026-10-v2/teod-research-v2-04.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/09ff3cec-2b7d-4426-9c4f-f661d22c4d55.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYjllYjllZjU4NmZmOWM0MSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE3MjIxM30.J1eEoZSuaNepMyml74rA1CVn7vQ8kD0LVRR7k4379VI' -o teod-social/research/2026-10-v2/teod-research-v2-05.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/9af8d4c8-d2a5-48b0-95a5-a57789fd6929.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDg2ZjAyZjEwNTRkNTc5NCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTIxNDU3N30.hQuyJHVXpUmdoycOCCE5ctCcoRuePZmt5Qw7AVW0dPM' -o teod-social/research/2026-10-v2/teod-research-v2-06.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/0fafc866-441c-4319-a274-8bdd6c4636a1.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTRmZTQwMTVmY2Y4NWJmYiIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE5ODg2OX0.fQy2lhVh5liZvX_7LF_uW0t-7skrpuci8hfOEy8uHFA' -o teod-social/research/2026-10-v2/teod-research-v2-07.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/d438cd54-0f35-4f92-ad3f-09cbc031830c.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMzU5NGNhYmNjNzUyZmQ0NSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE5NjQ3Nn0.bXCxmhGiqF_FiD4_GfEW70FtqRwIWwNppAalQ4_WDHk' -o teod-social/research/2026-10-v2/teod-research-v2-08.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/6e246bc6-0735-4b2b-8aa9-c67ea1c636e2.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMGMxZWZhZjdiMjM1NTc1YiIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTIxNjExOX0.24Qele-xfnp1daMpzi8S5r1JFwSekYlsdRgIDFv0UYM' -o teod-social/research/2026-10-v2/teod-research-v2-09.png
+          curl -fL --retry 3 'https://d2jqrm6oza8nb6.cloudfront.net/datasets/d08c4243-1ac4-4fee-b907-59fd0503696e.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMjgyNTAzZDI1ODY3MzhkNSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTE4NDg1MH0.it6wyikB3ehKZ0Yv1rYY9mmz2sa_9mFwrBNLWNYI_vc' -o teod-social/research/2026-10-v2/teod-research-v2-10.png
+
+          test "$(find teod-social/research/2026-10-v2 -type f | wc -l)" -eq 10
+          file teod-social/research/2026-10-v2/*
+
+      - name: Commit imported posters
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "TEOD Social Ops"
+          git config user.email "actions@users.noreply.github.com"
+          git add teod-social/research/2026-10-v2
+          git diff --cached --quiet && exit 0
+          git commit -m "assets: import exact TEOD Research v2 campaign posters"
+          git push

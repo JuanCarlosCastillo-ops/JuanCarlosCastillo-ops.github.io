@@ -1,1 +1,362 @@
-[]
+[
+  {
+    "id": "teod-research-20261003-p01-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Una investigación fuerte no empieza escribiendo veinte páginas. Empieza cuando la pregunta puede defenderse.\n\nEn TEOD Research trabajamos contigo para delimitar el problema, convertir una intuición en una hipótesis comprobable y dejar claro qué evidencia sería suficiente para sostener —o refutar— la idea.\n\nNo vendemos un documento terminado para poner tu nombre. Construimos contigo el razonamiento que debe existir detrás del paper.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #Investigacion #Metodologia #PublicacionCientifica",
+    "scheduled_at": "2026-10-03T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-01.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 1,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261003-p01-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-03T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-01.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 1,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261004-p02-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Antes de invertir semanas en un paper hay una pregunta incómoda: ¿la idea realmente aporta algo nuevo?\n\nRevisamos literatura y prior art, delimitamos la brecha y buscamos qué tendría que demostrar el trabajo para que su contribución sea defendible. Es mejor matar una idea débil temprano que descubrirlo después de escribir todo el manuscrito.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #RevisionBibliografica #Research #Ciencia",
+    "scheduled_at": "2026-10-04T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-02.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 2,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261004-p02-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-04T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-02.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 2,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261005-p03-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Publicar no es llenar Introducción, Método, Resultados y Conclusiones.\n\nUn manuscrito necesita una cadena lógica: problema → hipótesis → método → evidencia → conclusión. Si una pieza no sostiene a la siguiente, los revisores lo encuentran.\n\nEn TEOD Research ayudamos a ordenar esa arquitectura científica y a identificar exactamente dónde está la contribución.\n\n📲 0967393585\n\n#TEODResearch #Paper #InvestigacionCientifica #Academia",
+    "scheduled_at": "2026-10-05T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-03.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 3,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261005-p03-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-05T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-03.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 3,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261006-p04-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Una metodología buena no está diseñada para que el resultado salga bonito. Está diseñada para que la hipótesis sobreviva a pruebas difíciles.\n\nPodemos apoyarte en diseño experimental, selección de benchmarks, validación, métricas y pruebas adversariales para que el trabajo tenga evidencia y no solo una narrativa convincente.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #Metodologia #Validacion #Research",
+    "scheduled_at": "2026-10-06T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-04.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 4,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261006-p04-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-06T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-04.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 4,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261007-p05-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Si el resultado solo existe en una gráfica final, falta trazabilidad.\n\nDatos, código, parámetros, versiones, decisiones y resultados deberían formar un camino que pueda reconstruirse. La reproducibilidad no es un adorno para el repositorio: es parte de la calidad científica.\n\nTEOD Research puede ayudarte a organizar ese proceso desde el análisis hasta el manuscrito.\n\n📲 0967393585\n\n#TEODResearch #Reproducibilidad #OpenScience #Investigacion",
+    "scheduled_at": "2026-10-07T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-05.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 5,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261007-p05-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-07T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-05.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 5,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261008-p06-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Q1 o Q2 no se promete. Tampoco una aceptación.\n\nLo que sí se puede trabajar es la calidad del problema, la evidencia, la claridad del manuscrito y el ajuste entre el artículo y la revista. Esa es la parte que realmente está bajo nuestro control.\n\nEn TEOD Research preferimos una evaluación técnica seria antes que vender expectativas falsas.\n\n📲 0967393585\n\n#TEODResearch #PublicacionCientifica #Journals #Research",
+    "scheduled_at": "2026-10-08T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-06.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 6,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261008-p06-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-08T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-06.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 6,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261009-p07-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "Una revisión por pares no termina cuando llega el correo del editor.\n\nCada comentario del revisor debería terminar en una de tres cosas: evidencia adicional, una modificación claramente trazable o una justificación técnica sólida. Respondemos contigo punto por punto y revisamos que los cambios también queden reflejados en el manuscrito.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #PeerReview #Revision #Academia",
+    "scheduled_at": "2026-10-09T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-07.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 7,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261009-p07-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-09T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-07.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 7,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261010-p08-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "La reproducibilidad se diseña desde el día 1, no la noche antes de enviar.\n\nVersionado, protocolos, estructura de archivos, semillas, configuraciones, tablas maestras y registros de decisiones pueden ahorrarte semanas cuando toca repetir un experimento o responder a un revisor.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #Reproducibilidad #ResearchWorkflow #Ciencia",
+    "scheduled_at": "2026-10-10T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-08.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 8,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261010-p08-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-10T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-08.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 8,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261011-p09-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "No vendemos autorías.\n\nLa autoría científica tiene que corresponder a una contribución real. Nuestro trabajo es apoyar el proceso: problema, método, análisis, reproducibilidad, revisión técnica y estrategia de respuesta. La integridad no es una limitación del servicio; es parte del servicio.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #IntegridadCientifica #CRediT #Investigacion",
+    "scheduled_at": "2026-10-11T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-09.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 9,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261011-p09-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-11T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-09.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 9,
+      "channel": "story"
+    }
+  },
+  {
+    "id": "teod-research-20261012-p10-feed-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "¿Tienes una idea, datos ya recogidos o un manuscrito que lleva semanas estancado?\n\nPodemos empezar por una auditoría: identificar el cuello de botella, decirte qué está débil, qué sí vale la pena conservar y cuál sería el siguiente experimento o revisión con mayor impacto.\n\nSin promesas mágicas. Con trabajo técnico, criterio y trazabilidad.\n\n📲 TEOD Research: 0967393585\n\n#TEODResearch #Paper #Investigacion #PublicacionCientifica",
+    "scheduled_at": "2026-10-12T19:00:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-10.jpg",
+    "line": "business",
+    "format": "POST",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 10,
+      "channel": "feed"
+    }
+  },
+  {
+    "id": "teod-research-20261012-p10-story-v1",
+    "action": "queue_post",
+    "workspace_id": "teod-control",
+    "caption": "",
+    "scheduled_at": "2026-10-12T23:50:00.000Z",
+    "networks": [
+      "facebook"
+    ],
+    "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-10.jpg",
+    "line": "business",
+    "format": "STORY",
+    "source": {
+      "campaign": "teod-research-oct-2026",
+      "piece": 10,
+      "channel": "story"
+    }
+  }
+]

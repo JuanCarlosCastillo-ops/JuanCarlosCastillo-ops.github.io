@@ -1,0 +1,36 @@
+name: TEOD Research cleanup sync
+
+on:
+  push:
+    paths:
+      - ".github/workflows/teod-research-cleanup.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Sync cancellation commands
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.request, time
+          base="https://teod-social.juan-castillo2321.workers.dev"
+          req=urllib.request.Request(base+"/api/ops/tick?source=github-watchdog",headers={"User-Agent":"teod-research-cleanup/1.0"})
+          with urllib.request.urlopen(req,timeout=120) as r:
+              print(json.dumps(json.load(r),ensure_ascii=False,indent=2))
+          time.sleep(2)
+          req=urllib.request.Request(base+"/api/posts?workspace=teod-control",headers={"User-Agent":"teod-research-cleanup/1.0"})
+          with urllib.request.urlopen(req,timeout=60) as r:
+              posts=json.load(r)
+          items=posts.get("posts",posts) if isinstance(posts,dict) else posts
+          wrong=[p for p in items if "teod-research-" in str(p.get("media_url") or "")]
+          states=[{"id":p.get("id"),"status":p.get("status"),"format":p.get("format")} for p in wrong]
+          print(json.dumps({"count":len(states),"states":states},ensure_ascii=False,indent=2))
+          bad=[s for s in states if s["status"]=="scheduled"]
+          if bad:
+              raise SystemExit("Incorrect TEOD Research posts still scheduled")
+          PY

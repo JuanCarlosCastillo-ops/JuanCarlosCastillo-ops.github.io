@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "response": {
+    "source": "github-watchdog",
+    "max_lateness_minutes": 90,
+    "synced_commands": 0,
+    "processed_targets": 0,
+    "processed": [],
+    "alarm": {
+      "ok": true,
+      "armed": true,
+      "reason": "arm-request",
+      "next_post_at": "2026-10-03T17:15:00.000Z",
+      "next_alarm_at": "2026-10-03T17:15:00+00:00",
+      "max_lateness_minutes": 180
+    },
+    "time": "2026-10-03T17:08:31.368000+00:00"
+  },
+  "checked_at": "2026-10-03T17:08:31.402725+00:00"
+}

@@ -1,0 +1,103 @@
+name: Generate TEOD Research campaign assets
+
+on:
+  push:
+    paths:
+      - ".github/workflows/generate-teod-research.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Pillow
+        run: python -m pip install --quiet pillow
+      - name: Generate premium campaign posters
+        shell: bash
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageDraw, ImageFont
+          from pathlib import Path
+
+          OUT=Path("teod-social/research/2026-10")
+          OUT.mkdir(parents=True, exist_ok=True)
+
+          PETROL=(18,53,60); PETROL2=(12,42,48); IVORY=(245,241,229)
+          SAGE=(137,164,148); BRONZE=(178,137,87); INK=(24,36,38)
+          REG="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+          BOLD="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+          cards=[
+            ("01","TU INVESTIGACIÓN\nNO NECESITA MÁS TEXTO","Necesita una pregunta defendible.","DIAGNÓSTICO · ENFOQUE · CRITERIO"),
+            ("02","ANTES DE ESCRIBIR,\nHAY QUE PROBAR LA IDEA","Novedad, literatura y una brecha que realmente exista.","PRIOR ART · NOVEDAD · ALCANCE"),
+            ("03","PUBLICAR NO ES\nLLENAR UNA PLANTILLA","Una contribución científica tiene que poder explicarse en una frase.","CONTRIBUCIÓN · LÓGICA · EVIDENCIA"),
+            ("04","UNA METODOLOGÍA DEBE\nRESISTIR PREGUNTAS INCÓMODAS","Diseñamos experimentos para intentar refutar, no decorar, la hipótesis.","DISEÑO EXPERIMENTAL · VALIDACIÓN"),
+            ("05","DATOS, CÓDIGO Y RESULTADOS\nDEBEN PODER EXPLICARSE","Trazabilidad y reproducibilidad antes de llegar a los revisores.","REPRODUCIBILIDAD · TRAZABILIDAD"),
+            ("06","Q1 / Q2\nNO SE PROMETE","Se trabaja para construir un manuscrito técnicamente defendible.","ESTRATEGIA EDITORIAL · CALIDAD"),
+            ("07","RESPONDER REVISORES\nTAMBIÉN ES INVESTIGAR","Cada observación debe traducirse en evidencia, cambio o justificación.","REVISIÓN · RESPUESTA · TRAZABILIDAD"),
+            ("08","LA REPRODUCIBILIDAD\nSE DISEÑA DESDE EL DÍA 1","Versiones, protocolos y decisiones que dejan rastro.","PROTOCOLOS · VERSIONADO · CONTROL"),
+            ("09","NO VENDEMOS AUTORÍAS","Construimos investigación real con contribuciones reales.","INTEGRIDAD · CRediT · RESPONSABILIDAD"),
+            ("10","¿TU PAPER SE QUEDÓ\nESTANCADO?","Idea, datos, método o manuscrito: encontremos el cuello de botella.","TEOD RESEARCH · ACOMPAÑAMIENTO"),
+          ]
+
+          def font(path,size): return ImageFont.truetype(path,size)
+          def wrap(draw,text,f,maxw):
+              words=text.split(); lines=[]; cur=""
+              for w in words:
+                  t=w if not cur else cur+" "+w
+                  if draw.textbbox((0,0),t,font=f)[2] <= maxw: cur=t
+                  else:
+                      if cur: lines.append(cur)
+                      cur=w
+              if cur: lines.append(cur)
+              return lines
+
+          for idx,title,subtitle,kicker in cards:
+              W,H=1080,1920
+              im=Image.new("RGB",(W,H),IVORY); d=ImageDraw.Draw(im)
+              d.rectangle([0,0,W,355],fill=PETROL)
+              d.rectangle([0,355,56,H],fill=BRONZE)
+              cx,cy,r=895,305,215
+              d.ellipse([cx-r,cy-r,cx+r,cy+r],outline=SAGE,width=5)
+              d.arc([cx-145,cy-145,cx+145,cy+145],205,340,fill=BRONZE,width=10)
+              d.text((105,115),"TEOD  /  RESEARCH",font=font(REG,34),fill=IVORY)
+              d.text((955,115),idx,font=font(REG,32),fill=IVORY,anchor="ra")
+
+              x=120; y=580; ftitle=font(BOLD,74)
+              for block in title.split("\n"):
+                  for line in wrap(d,block,ftitle,815):
+                      d.text((x,y),line,font=ftitle,fill=PETROL2); y+=92
+              y+=54
+              d.rectangle([x,y,x+170,y+8],fill=BRONZE); y+=80
+              fsub=font(REG,40)
+              for line in wrap(d,subtitle,fsub,790):
+                  d.text((x,y),line,font=fsub,fill=INK); y+=60
+
+              fy=1540; fk=font(REG,27)
+              bbox=d.textbbox((0,0),kicker,font=fk)
+              pw=min(790,(bbox[2]-bbox[0])+85)
+              d.rounded_rectangle([x,fy,x+pw,fy+82],radius=41,fill=(228,231,219))
+              d.text((x+35,fy+41),kicker,font=fk,fill=PETROL,anchor="lm")
+              d.text((x,1785),"Investigación aplicada · método · reproducibilidad · integridad científica",font=font(REG,24),fill=(80,94,91))
+              for j,c in enumerate((BRONZE,SAGE,PETROL)):
+                  yy=1280+j*58; d.rectangle([865,yy,950,yy+7],fill=c)
+              im.save(OUT/f"teod-research-{idx}.jpg","JPEG",quality=88,optimize=True,progressive=True)
+          PY
+      - name: Commit generated assets
+        run: |
+          git config user.name "TEOD Social Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add teod-social/research/2026-10/*.jpg
+          if git diff --cached --quiet; then
+            echo "No asset changes"
+          else
+            git commit -m "feat: add TEOD Research October campaign assets"
+            git push
+          fi

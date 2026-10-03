@@ -117,6 +117,44 @@ jobs:
           )
           print(json.dumps(result,ensure_ascii=False,indent=2))
           PY
+      - name: Audit TEOD Research schedule in production
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import urllib.request
+          from pathlib import Path
+
+          url="https://teod-social.juan-castillo2321.workers.dev/api/posts?workspace=teod-control"
+          req=urllib.request.Request(url,headers={"User-Agent":"teod-research-campaign-audit/1.0"})
+          with urllib.request.urlopen(req,timeout=60) as r:
+              posts=json.load(r)
+          items=posts.get("posts", posts) if isinstance(posts,dict) else posts
+          research=[]
+          for p in items:
+              media=str(p.get("media_url") or "")
+              if "teod-research-" in media:
+                  research.append({
+                      "id":p.get("id"),
+                      "scheduled_at":p.get("scheduled_at"),
+                      "format":p.get("format"),
+                      "status":p.get("status"),
+                      "media_url":media,
+                      "line":p.get("line"),
+                      "targets":p.get("targets",[]),
+                  })
+          summary={
+              "count":len(research),
+              "feed":sum(1 for p in research if str(p.get("format")).upper()=="POST"),
+              "stories":sum(1 for p in research if str(p.get("format")).upper()=="STORY"),
+              "scheduled":sum(1 for p in research if p.get("status")=="scheduled"),
+              "items":research,
+          }
+          Path("teod-social/research/2026-10/schedule-audit.json").write_text(
+              json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"
+          )
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          PY
       - name: Commit generated assets and verified sync result
         run: |
           git config user.name "TEOD Social Bot"

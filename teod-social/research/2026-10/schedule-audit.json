@@ -1,0 +1,368 @@
+{
+  "count": 20,
+  "feed": 10,
+  "stories": 10,
+  "scheduled": 20,
+  "items": [
+    {
+      "id": "9bb0f588-da03-46a0-aeba-6c9fe24f3d22",
+      "scheduled_at": "2026-10-03T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-01.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "1598ede3-cdca-4912-96f4-80b86637e4e4",
+      "scheduled_at": "2026-10-03T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-01.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "6c6992a0-6cd3-4ce3-9657-e21805ff28ee",
+      "scheduled_at": "2026-10-04T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-02.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "3845d6e4-9419-4bc2-84a2-6a2fd08b879b",
+      "scheduled_at": "2026-10-04T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-02.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "c43b99b8-5a7a-4e1e-939a-2fa32f069944",
+      "scheduled_at": "2026-10-05T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-03.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "4921857a-1ea9-4878-9aab-3575282e0af8",
+      "scheduled_at": "2026-10-05T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-03.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "750e5223-b06e-4f7d-9493-20dae066d3cf",
+      "scheduled_at": "2026-10-06T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-04.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "9c50d552-dec9-4c76-ac58-64f3ec3ae2cd",
+      "scheduled_at": "2026-10-06T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-04.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "e6649c49-563a-40d3-970a-eb95f4d96502",
+      "scheduled_at": "2026-10-07T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-05.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "c93b84b9-5a91-4124-8c62-16fcde7f788c",
+      "scheduled_at": "2026-10-07T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-05.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "a4b01b14-57cc-4831-97fc-6071a8006840",
+      "scheduled_at": "2026-10-08T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-06.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "de3f1e76-06e6-4c50-a0f7-4974a88f1f14",
+      "scheduled_at": "2026-10-08T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-06.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "2cb23708-b2df-4862-8da8-e1edd2b0e4bf",
+      "scheduled_at": "2026-10-09T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-07.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "4040d7b5-4231-413a-924e-dfd30cfb28ad",
+      "scheduled_at": "2026-10-09T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-07.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "f2365826-dbb8-4848-9fde-d1dfc1306d5a",
+      "scheduled_at": "2026-10-10T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-08.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "9cd0a69a-31ab-4c30-876b-a68e89a584e3",
+      "scheduled_at": "2026-10-10T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-08.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "441b5d0e-d04b-4811-a718-5eae6f4f37a8",
+      "scheduled_at": "2026-10-11T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-09.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "aeba64ae-5236-459b-b10d-587f5b47ff84",
+      "scheduled_at": "2026-10-11T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-09.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "200e9230-db9b-462d-bbdd-7d186d876862",
+      "scheduled_at": "2026-10-12T19:00:00.000Z",
+      "format": "POST",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-10.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    },
+    {
+      "id": "169be9d3-7cb8-46e9-8f83-f74574727e33",
+      "scheduled_at": "2026-10-12T23:50:00.000Z",
+      "format": "STORY",
+      "status": "scheduled",
+      "media_url": "https://raw.githubusercontent.com/JuanCarlosCastillo-ops/JuanCarlosCastillo-ops.github.io/main/teod-social/research/2026-10/teod-research-10.jpg",
+      "line": "business",
+      "targets": [
+        {
+          "network": "facebook",
+          "status": "scheduled",
+          "attempts": 0,
+          "remote_id": null,
+          "permalink_url": null,
+          "last_error": null
+        }
+      ]
+    }
+  ]
+}
